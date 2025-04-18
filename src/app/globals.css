@@ -1,0 +1,69 @@
+.container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.input-section,
+.output-section {
+  margin-bottom: 2rem;
+}
+
+textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  margin-bottom: 1rem;
+  font-family: monospace;
+  resize: vertical;
+}
+
+button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.clean-btn {
+  background-color: #333;
+  color: white;
+}
+
+.download-btn {
+  background-color: #333;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.button-group {
+  display: flex;
+  gap: 1.5rem;  /* Adds space between buttons */
+  margin-top: 1rem;  /* Adds space above the button group */
+}
+
+.download-btn,
+.pdf-btn {
+  flex: 1;  /* Makes buttons take equal width */
+  max-width: 200px;  /* Limits maximum button width */
+}
