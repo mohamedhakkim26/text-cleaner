@@ -58,12 +58,48 @@ button:hover {
 
 .button-group {
   display: flex;
-  gap: 1.5rem;  /* Adds space between buttons */
-  margin-top: 1rem;  /* Adds space above the button group */
+  gap: 1.5rem;
+  margin-top: 1rem;
+  position: relative;
 }
 
 .download-btn,
 .pdf-btn {
-  flex: 1;  /* Makes buttons take equal width */
-  max-width: 200px;  /* Limits maximum button width */
+  flex: 1;
+  max-width: 200px;
+  position: relative;
+}
+
+.download-btn:hover::after,
+.pdf-btn:hover::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem;
+  background-color: #333;
+  color: white;
+  border-radius: 4px;
+  font-size: 0.875rem;
+  white-space: nowrap;
+  margin-bottom: 0.5rem;
+}
+
+.download-btn:hover::before,
+.pdf-btn:hover::before {
+  content: '';
+  position: absolute;
+  bottom: calc(100% - 5px);
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: #333 transparent transparent transparent;
+}
+
+.error-text {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
 }
