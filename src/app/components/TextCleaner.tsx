@@ -37,7 +37,7 @@ const TextCleaner = () => {
 
   return (
     <div className="container">
-      <h1>TEXT CLEANER</h1>
+      <h1>TextalClear</h1>
       
       <div className="input-section">
         <h2>INPUT TEXT</h2>
